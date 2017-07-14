@@ -22,6 +22,8 @@ import {StoreDevtoolsModule} from '@ngrx/store-devtools';
 import {EffectsModule} from '@ngrx/effects';
 import {ContactEffects} from './store/contacts-effects';
 import {ContactDetailsComponent} from './views/contact-details/contact-details.component';
+import { UsersComponent } from './views/users/users/users.component';
+import { UserNewComponent } from './views/users/user-new/user-new.component';
 
 
 @NgModule({
@@ -35,6 +37,8 @@ import {ContactDetailsComponent} from './views/contact-details/contact-details.c
     ContactEditComponent,
     ContactNewComponent,
     ContactsIndexComponent,
+    UsersComponent,
+    UserNewComponent,
   ],
   imports: [
     BrowserModule,
