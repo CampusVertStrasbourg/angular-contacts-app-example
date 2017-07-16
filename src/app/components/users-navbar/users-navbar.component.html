@@ -1,0 +1,20 @@
+<nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <a routerLink="/users" [routerLinkActive]="['router-link-active']" class="navbar-brand" href="#">Clients</a>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a routerLink="/users/new" [routerLinkActive]="['router-link-active']" class="nav-link" href="#">Nouveau</a>
+      </li>
+      <li class="nav-item">
+        <a routerLink="/users/1" [routerLinkActive]="['router-link-active']" class="nav-link" href="#">Details (1)</a>
+      </li>
+      <li class="nav-item">
+        <a routerLink="/users/1/order" [routerLinkActive]="['router-link-active']" class="nav-link" href="#">Commande (1)</a>
+      </li>
+    </ul>
+  </div>
+</nav>

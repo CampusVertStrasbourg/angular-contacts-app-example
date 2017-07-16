@@ -22,8 +22,12 @@ import {StoreDevtoolsModule} from '@ngrx/store-devtools';
 import {EffectsModule} from '@ngrx/effects';
 import {ContactEffects} from './store/contacts-effects';
 import {ContactDetailsComponent} from './views/contact-details/contact-details.component';
-import { UsersComponent } from './views/users/users/users.component';
+import { UsersComponent } from './views/users/users.component';
 import { UserNewComponent } from './views/users/user-new/user-new.component';
+import { UserIndexComponent } from './views/users/user-index/user-index.component';
+import { UserOrderComponent } from './views/users/user-order/user-order.component';
+import { UserDetailsComponent } from './views/users/user-details/user-details.component';
+import { UsersNavbarComponent } from './components/users-navbar/users-navbar.component';
 
 
 @NgModule({
@@ -39,6 +43,10 @@ import { UserNewComponent } from './views/users/user-new/user-new.component';
     ContactsIndexComponent,
     UsersComponent,
     UserNewComponent,
+    UserIndexComponent,
+    UserOrderComponent,
+    UserDetailsComponent,,
+    UsersNavbarComponent,
   ],
   imports: [
     BrowserModule,
