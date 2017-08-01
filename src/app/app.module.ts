@@ -28,6 +28,7 @@ import { UserIndexComponent } from './views/users/user-index/user-index.componen
 import { UserOrderComponent } from './views/users/user-order/user-order.component';
 import { UserDetailsComponent } from './views/users/user-details/user-details.component';
 import { UsersNavbarComponent } from './components/users-navbar/users-navbar.component';
+import { UsersService } from './services/users.service';
 
 
 @NgModule({
@@ -58,7 +59,10 @@ import { UsersNavbarComponent } from './components/users-navbar/users-navbar.com
     EffectsModule.run(ContactEffects), /* Start monitoring contacts side effects */
     StoreDevtoolsModule.instrumentOnlyWithExtension()
   ],
-  providers: [ContactsService],
+  providers: [
+    ContactsService,
+    UsersService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
