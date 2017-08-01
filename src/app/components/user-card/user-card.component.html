@@ -1,0 +1,12 @@
+<div class="card">
+  <div class="card-header">
+    {{user.firstName}} {{user.familyName}} (#{{user.id}}) <button [routerLinkActive]="['router-link-active']" routerLink="/users/{{user.id}}/edit" class="btn btn-outline-warning btn-sm">Edit</button>
+  </div>
+  <div class="card-body">
+    <p class="card-text">{{user.firstName}}</p>
+    <p class="card-text">{{user.familyName}}</p>
+    <p class="card-text">{{user.phoneNumber}}</p>
+    <p class="card-text">{{user.mail}}</p>
+  </div>
+</div>
+

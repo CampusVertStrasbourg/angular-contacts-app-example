@@ -30,6 +30,7 @@ import { UserDetailsComponent } from './views/users/user-details/user-details.co
 import { UsersNavbarComponent } from './components/users-navbar/users-navbar.component';
 import { UsersService } from './services/users.service';
 import { UserListComponent } from './components/user-list/user-list.component';
+import { UserCardComponent } from './components/user-card/user-card.component';
 
 
 @NgModule({
@@ -50,6 +51,7 @@ import { UserListComponent } from './components/user-list/user-list.component';
     UserDetailsComponent,
     UsersNavbarComponent,
     UserListComponent,
+    UserCardComponent,
   ],
   imports: [
     BrowserModule,
