@@ -32,6 +32,7 @@ import { UsersService } from './services/users.service';
 import { UserListComponent } from './components/user-list/user-list.component';
 import { UserCardComponent } from './components/user-card/user-card.component';
 import { OrderListComponent } from './components/order-list/order-list.component';
+import { OrdersService } from './services/orders.service';
 
 
 @NgModule({
@@ -67,7 +68,8 @@ import { OrderListComponent } from './components/order-list/order-list.component
   ],
   providers: [
     ContactsService,
-    UsersService
+    UsersService,
+    OrdersService
   ],
   bootstrap: [AppComponent]
 })
