@@ -31,6 +31,7 @@ import { UsersNavbarComponent } from './components/users-navbar/users-navbar.com
 import { UsersService } from './services/users.service';
 import { UserListComponent } from './components/user-list/user-list.component';
 import { UserCardComponent } from './components/user-card/user-card.component';
+import { OrderListComponent } from './components/order-list/order-list.component';
 
 
 @NgModule({
@@ -52,6 +53,7 @@ import { UserCardComponent } from './components/user-card/user-card.component';
     UsersNavbarComponent,
     UserListComponent,
     UserCardComponent,
+    OrderListComponent
   ],
   imports: [
     BrowserModule,

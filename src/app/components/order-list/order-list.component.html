@@ -1,0 +1,27 @@
+<table *ngIf="orders; else loading" class="table table-hover">
+  <thead>
+  <tr>
+    <th>#</th>
+    <th>Status</th>
+    <th>Date</th>
+    <th></th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let order of orders">
+    <th scope="row">{{order.id}}</th>
+    <td>{{order.status}}</td>
+    <td></td>
+    <td>
+      <button routerLink="/orders/{{order.id}}" [routerLinkActive]="['router-link-active']" class="btn btn-outline-primary btn-sm">
+        Details
+      </button>
+    </td>
+  </tr>
+
+  </tbody>
+</table>
+
+<ng-template #loading>
+  <span>loading contacts...</span>
+</ng-template>
