@@ -29,6 +29,7 @@ import { UserOrderComponent } from './views/users/user-order/user-order.componen
 import { UserDetailsComponent } from './views/users/user-details/user-details.component';
 import { UsersNavbarComponent } from './components/users-navbar/users-navbar.component';
 import { UsersService } from './services/users.service';
+import { UserListComponent } from './components/user-list/user-list.component';
 
 
 @NgModule({
@@ -48,6 +49,7 @@ import { UsersService } from './services/users.service';
     UserOrderComponent,
     UserDetailsComponent,,
     UsersNavbarComponent,
+    UserListComponent,
   ],
   imports: [
     BrowserModule,

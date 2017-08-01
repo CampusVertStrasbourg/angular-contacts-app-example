@@ -1,0 +1,35 @@
+<table *ngIf="users; else loading" class="table table-hover">
+  <thead>
+  <tr>
+    <th>#</th>
+    <th>FamilyName</th>
+    <th>FirstName</th>
+    <th>Email</th>
+    <th>Phone</th>
+    <th></th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let user of users">
+    <th scope="row">{{user.id}}</th>
+    <td>{{user.familyName}}</td>
+    <td>{{user.firstName}}</td>
+    <td>{{user.mail}}</td>
+    <td>{{user.phoneNumber}}</td>
+    <td>
+      <button routerLink="/users/{{user.id}}" [routerLinkActive]="['router-link-active']" class="btn btn-outline-primary btn-sm">
+        Details
+      </button>
+
+      <button routerLink="/users/{{user.id}}/newOrder" [routerLinkActive]="['router-link-active']" class="btn btn-outline-warning btn-sm">
+        New Order
+      </button>
+    </td>
+  </tr>
+
+  </tbody>
+</table>
+
+<ng-template #loading>
+  <span>loading contacts...</span>
+</ng-template>
