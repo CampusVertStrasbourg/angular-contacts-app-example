@@ -33,4 +33,9 @@ export class UsersService {
     })[0];
   }
 
+  add(user: User) {
+    user.id = this.usersStub.length + 1;
+    this.usersStub.push(user);
+  }
+
 }
