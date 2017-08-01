@@ -1,0 +1,32 @@
+<form (submit)="submit()"  class="form" [formGroup]="form">
+  <h1>User registration form</h1>
+
+  <div class="form-group">
+    <label for="formGroupLastName">Last Name</label>
+    <input type="text" class="form-control" id="formGroupLastName" placeholder="Last Name" formControlName="familyName">
+  </div>
+
+  <div class="form-group">
+    <label for="formGroupFirstName">First Name</label>
+    <input type="text" class="form-control" id="formGroupFirstName" placeholder="First Name" formControlName="firstName">
+  </div>
+
+  <div class="form-group">
+    <label for="formGroupEmail">Email</label>
+    <input type="email" class="form-control" id="formGroupEmail" placeholder="Email" formControlName="mail">
+  </div>
+
+  <div class="form-group">
+    <label for="formGroupPhone">Phone</label>
+    <input type="tel" class="form-control" id="formGroupPhone" placeholder="Phone" formControlName="phoneNumber">
+  </div>
+
+  <div class="form-group">
+    <button
+      type="submit"
+      [disabled]="!form.valid"
+      class="btn btn-success">
+      Submit
+    </button>
+  </div>
+</form>

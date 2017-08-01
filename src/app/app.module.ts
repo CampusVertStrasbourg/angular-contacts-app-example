@@ -33,6 +33,7 @@ import { UserListComponent } from './components/user-list/user-list.component';
 import { UserCardComponent } from './components/user-card/user-card.component';
 import { OrderListComponent } from './components/order-list/order-list.component';
 import { OrdersService } from './services/orders.service';
+import { UserFormComponent } from './components/user/user-form/user-form.component';
 
 
 @NgModule({
@@ -54,7 +55,8 @@ import { OrdersService } from './services/orders.service';
     UsersNavbarComponent,
     UserListComponent,
     UserCardComponent,
-    OrderListComponent
+    OrderListComponent,
+    UserFormComponent
   ],
   imports: [
     BrowserModule,
