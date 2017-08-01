@@ -47,7 +47,7 @@ import { UserListComponent } from './components/user-list/user-list.component';
     UserNewComponent,
     UserIndexComponent,
     UserOrderComponent,
-    UserDetailsComponent,,
+    UserDetailsComponent,
     UsersNavbarComponent,
     UserListComponent,
   ],
